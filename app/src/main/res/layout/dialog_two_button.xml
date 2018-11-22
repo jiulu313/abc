@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/comment_dialog_bg"
+        android:orientation="vertical"
+        android:padding="10.0dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="120dip"
+            android:padding="9dip"
+            android:textColor="@color/comment_dialog_content_text"
+            android:textSize="16sp"
+            android:text="你确定退出吗？"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:text="取消"
+                android:textColor="@color/comment_dialog_share_text"
+                android:textSize="13.0sp" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:text="确定"
+                android:textColor="@color/comment_dialog_share_text"
+                android:textSize="13.0sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
